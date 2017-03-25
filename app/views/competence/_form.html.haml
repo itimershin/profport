@@ -1,0 +1,8 @@
+= simple_form_for(competence) do |f|
+  = f.error_notification
+    .form-inputs
+      = f.input :title
+      = f.input :author
+      = f.input :skillrate
+    .form.actions
+      =f.button :submit

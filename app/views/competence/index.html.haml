@@ -1,0 +1,17 @@
+
+%h1 Компетенции
+  %table.table.table-hover
+    %thead
+      %tr.panel.panel-heading
+        %th Название
+        %th Авторj
+        %th Уровень владения (от 1 до 3)
+  %tbody
+    - @competences.each do |x|
+      %tr
+        %td= x.title
+        %td= x.author
+        %td= x.skillrate
+        %td= link_to ' Показать '
+        %td= link_to 'Редактировать ]'
+        %td= link_to 'Удалить'
