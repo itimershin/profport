@@ -5,4 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   validates :email, presence: true
   validates :password, length: 6..20
+
+ has_many :authors
+
 end
